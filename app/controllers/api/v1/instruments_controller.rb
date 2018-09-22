@@ -3,11 +3,14 @@ class Api::V1::InstrumentsController < ApplicationController
     render json: Instrument.all
   end
 
+  def show
+    render json: Instrument.find(params[:id])
+  end
 
   private
 
   def instrument_params
-    params.permit(:id, :brand, :name, :color, :condition, :pic_url, :listing_id, :category_id)
+    params.permit(:id, :brand, :name, :color, :condition, :pic_url, :price, :sold, :category_id, :user_id)
   end
 
   def find_instrument

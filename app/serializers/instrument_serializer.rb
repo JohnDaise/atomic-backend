@@ -1,5 +1,6 @@
 class InstrumentSerializer < ActiveModel::Serializer
-  attributes :id, :brand, :name, :color, :condition, :pic_url, :listing_id, :category_id
+  attributes :id, :brand, :name, :color, :condition, :pic_url, :price, :sold, :category_id, :user_id
 
-  belongs_to :listing
+  belongs_to :category
+  belongs_to :user
 end

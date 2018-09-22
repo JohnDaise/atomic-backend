@@ -6,8 +6,10 @@ class CreateInstruments < ActiveRecord::Migration[5.2]
       t.string :color
       t.string :condition
       t.string :pic_url
-      t.integer :listing_id
+      t.integer :price
+      t.boolean :sold
       t.integer :category_id
+      t.integer :user_id
 
       t.timestamps
     end

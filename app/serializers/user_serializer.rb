@@ -1,5 +1,5 @@
 class UserSerializer < ActiveModel::Serializer
   attributes :id, :name, :email
 
-  has_many :listings
+  has_many :instruments
 end
