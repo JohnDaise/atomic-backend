@@ -19,6 +19,10 @@ class Api::V1::InstrumentsController < ApplicationController
     end
   end
 
+  def destroy
+    render json: Instrument.find(params[:id]).destroy
+  end
+
   private
 
   def instrument_params
