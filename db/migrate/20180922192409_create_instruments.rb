@@ -5,6 +5,7 @@ class CreateInstruments < ActiveRecord::Migration[5.2]
       t.string :name
       t.string :color
       t.string :condition
+      t.string :description
       t.string :pic_url
       t.integer :price
       t.boolean :sold

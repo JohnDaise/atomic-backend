@@ -10,7 +10,7 @@ class Api::V1::InstrumentsController < ApplicationController
   private
 
   def instrument_params
-    params.permit(:id, :brand, :name, :color, :condition, :pic_url, :price, :sold, :category_id, :user_id)
+    params.permit(:id, :brand, :name, :color, :condition, :description, :pic_url, :price, :sold, :category_id, :user_id)
   end
 
   def find_instrument

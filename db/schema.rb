@@ -26,6 +26,7 @@ ActiveRecord::Schema.define(version: 2018_09_22_192424) do
     t.string "name"
     t.string "color"
     t.string "condition"
+    t.string "description"
     t.string "pic_url"
     t.integer "price"
     t.boolean "sold"
