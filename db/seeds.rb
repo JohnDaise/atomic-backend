@@ -6,9 +6,9 @@
 #   movies = Movie.create([{ name: 'Star Wars' }, { name: 'Lord of the Rings' }])
 #   Character.create(name: 'Luke', movie: movies.first)
 
-user1 = User.create(name:'Admin' , email:'admin@gmail.com')
-user2 = User.create(name:'Prince' , email:'prince@gmail.com')
-user3 = User.create(name:'Stevie' , email:'wonder@gmail.com')
+user1 = User.create(name:'Admin' , email:'admin@gmail.com', password:'admin')
+user2 = User.create(name:'Prince' , email:'prince@gmail.com', password:'prince')
+user3 = User.create(name:'Stevie' , email:'wonder@gmail.com', password:'stevie')
 
 
 instrument1 = Instrument.create(brand: 'Fender', name: 'Stratocaster' , color: 'White' , condition: 'Good', description: 'Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat. Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur. Excepteur sint occaecat cupidatat non proident, sunt in culpa qui officia deserunt mollit anim id est laborum.', pic_url: "https://media.sweetwater.com/api/i/f-webp__q-82__ha-ca2f6a50f2a855ba__hmac-d22526535c108595f9319d7df69a1d7d48b63f3a/images/guitars/StratAO6ROWT/V1850409/V1850409-front-large.jpg", price: 1000,  sold: false, category_id: 1, user_id: user1.id )
